@@ -9,9 +9,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://repourl	#CHANGE
+    repoURL: https://github.com/hasanerol-git/sue.git
     targetRevision: main
-    path: gitops/subfolder	#CHANGE
+    path: apps
   syncPolicy:
     automated:
       prune: true
