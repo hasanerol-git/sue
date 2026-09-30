@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vulnerable-python
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vulnerable-python
+  template:
+    metadata:
+      labels:
+        app: vulnerable-python
+    spec:
+      containers:
+        - name: python
+          image: python:3.9-slim
+          command: ["sleep", "infinity"]
