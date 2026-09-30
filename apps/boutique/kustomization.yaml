@@ -6,4 +6,5 @@ namespace: boutique
 resources:
 #  - trivy_operator.yaml
   - namespace.yaml
-  - https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/main/kubernetes-manifests/frontend.yaml
+#  - https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/main/kubernetes-manifests/frontend.yaml
+  - - https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/main/release/kubernetes-manifests.yaml #ALL APP
