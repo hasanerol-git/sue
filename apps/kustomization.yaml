@@ -4,3 +4,4 @@ resources:
   - trivy_operator.yaml
   - boutique/
 #  - https://raw.githubusercontent.com/GoogleCloudPlatform/microservices-demo/main/kubernetes-manifests/frontend.yaml
+  - kube_prometheus.yaml
