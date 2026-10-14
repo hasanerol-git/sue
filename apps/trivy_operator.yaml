@@ -13,8 +13,14 @@ spec:
     helm:
       releaseName: trivy-operator
       values: |
+        serviceMonitor:
+          enabled: true
+        trivy:
+          ignoreUnfixed: true
+        service:
+          headless: false
         operator:
-          scanJobsConcurrentLimit: 2
+          scanJobsConcurrentLimit: 4
   destination:
     server: https://kubernetes.default.svc
     namespace: trivy-system
