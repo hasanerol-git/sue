@@ -21,6 +21,7 @@ spec:
           headless: false
         operator:
           scanJobsConcurrentLimit: 4
+          metricsVulnIdEnabled: true
   destination:
     server: https://kubernetes.default.svc
     namespace: trivy-system
