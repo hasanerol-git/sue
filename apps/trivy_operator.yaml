@@ -21,7 +21,7 @@ spec:
           headless: false
         operator:
           scanJobsConcurrentLimit: 4
-          metricsVulnIdEnabled: true
+#          metricsVulnIdEnabled: true #By default disabled. Not recommended for production. Too much data
   destination:
     server: https://kubernetes.default.svc
     namespace: trivy-system
